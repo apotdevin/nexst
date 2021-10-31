@@ -13,5 +13,6 @@
     "incremental": true,
     "skipLibCheck": true,
     "esModuleInterop": true
-  }
+  },
+  "include": ["src/server"]
 }
