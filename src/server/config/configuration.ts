@@ -1,4 +1,9 @@
-export default () => {
+type ConfigType = {
+  isProduction: boolean;
+  playground: boolean;
+};
+
+export default (): ConfigType => {
   const isProduction = process.env.NODE_ENV === 'production';
 
   console.log(
@@ -7,5 +12,6 @@ export default () => {
 
   return {
     isProduction,
+    playground: !isProduction,
   };
 };
